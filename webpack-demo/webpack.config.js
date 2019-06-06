@@ -8,8 +8,8 @@ module.exports = {
     app: './src/index.js',
     print: './src/print.js',
   },
-  devtool:'inline-source-map',
-  devServer: {
+  devtool:'inline-source-map',  //debug
+  devServer: {  //server
     contentBase: './dist',
   },
   plugins:[
@@ -20,6 +20,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',  //server
   }
 };
