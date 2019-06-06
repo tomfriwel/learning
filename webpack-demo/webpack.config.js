@@ -15,7 +15,7 @@ module.exports = {
   plugins:[
     new CleanWebpackPlugin(),
     new htmlWebpackPlugin({
-      title: 'Output Management .123'
+      title: 'Output Management'
     })
   ],
   output: {
